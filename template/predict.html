@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Waste Classification
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='predict.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div id="container">
+
+    <div id="card">
+
+        <h1>Waste Classification Result</h1>
+
+        <div id="result">
+            {% if pred == 0 %}
+                <p class="label cardboard">Cardboard</p>
+
+            {% elif pred == 1 %}
+                <p class="label glass">Glass</p>
+
+            {% elif pred == 2 %}
+                <p class="label metal"> Metal</p>
+
+            {% elif pred == 3 %}
+                <p class="label paper"> Paper</p>
+
+            {% elif pred == 4 %}
+                <p class="label plastic"> Plastic</p>
+
+            {% elif pred == 5 %}
+                <p class="label trash"> Trash</p>
+
+            {% else %}
+                <p class="label unknown">Unknown</p>
+            {% endif %}
+        </div>
+
+        <a href="/" id="btn">Classify Another Image</a>
+
+    </div>
+
+</div>
+
+{% endblock %}

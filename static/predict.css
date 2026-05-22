@@ -1,0 +1,121 @@
+/* predict.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    width: 380px;
+
+    padding: 2.5rem;
+
+    border-radius: 24px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    text-align: center;
+}
+
+h1{
+    color: white;
+
+    font-size: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+#result{
+    margin-bottom: 2rem;
+}
+
+.label{
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    padding: 1rem;
+
+    border-radius: 16px;
+
+    color: white;
+}
+
+.cardboard{
+    background: #b08968;
+}
+
+.glass{
+    background: #38bdf8;
+}
+
+.metal{
+    background: #94a3b8;
+}
+
+.paper{
+    background: #facc15;
+    color: black;
+}
+
+.plastic{
+    background: #a855f7;
+}
+
+.trash{
+    background: #ef4444;
+}
+
+.unknown{
+    background: #64748b;
+}
+
+#btn{
+    display: inline-block;
+
+    padding: 0.9rem 1.5rem;
+
+    border-radius: 12px;
+
+    background: #6366f1;
+
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+#btn:hover{
+    background: #7c3aed;
+
+    transform: scale(1.03);
+}
