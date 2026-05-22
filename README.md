@@ -1,0 +1,1 @@
+# TrashNet-Waste-Classification
